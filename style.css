@@ -1,65 +1,117 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    background: #f4f6f8;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f4f6f8, #eef2f7);
     color: #333;
 }
 
-header {
-    background: #0a66c2;
+/* HERO */
+.hero {
+    min-height: 90vh;
+    background: linear-gradient(135deg, #0a66c2, #004182);
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 80px 20px;
 }
 
-header h1 {
-    margin: 0;
+.hero h1 span {
+    color: #ffd700;
+}
+
+.hero h2 {
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.hero p {
+    margin: 20px auto;
+    max-width: 600px;
 }
 
 .links a {
+    display: inline-block;
     margin: 10px;
-    color: white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    background: white;
+    color: #0a66c2;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
+.links a:hover {
+    background: #ffd700;
+    color: black;
+}
+
+/* SECTIONS */
 section {
-    padding: 30px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
+    padding: 60px 20px;
 }
 
 h2 {
-    border-bottom: 2px solid #0a66c2;
-    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #0a66c2;
+}
+
+/* PROJECTS */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 .card {
     background: white;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
 }
 
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* SKILLS */
 .skills {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
+    justify-content: center;
+    gap: 15px;
 }
 
-.skills li {
-    background: #0a66c2;
+.skills span {
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #0a66c2, #00c6ff);
     color: white;
-    padding: 8px 15px;
-    margin: 5px;
-    border-radius: 20px;
+    border-radius: 30px;
+    font-size: 14px;
 }
 
-footer {
+/* EDUCATION */
+.edu-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
     text-align: center;
-    padding: 15px;
-    background: #222;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* FOOTER */
+footer {
+    background: #111;
     color: white;
+    text-align: center;
+    padding: 20px;
 }
