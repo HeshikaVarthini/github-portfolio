@@ -2,106 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Heshika Varthini | AI Portfolio</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- AOS Animation -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-
+    <title>Heshika Varthini | Data Scientist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HERO -->
-<header class="hero">
-    <div class="hero-content" data-aos="fade-up">
-        <img src="profile.jpg" alt="Heshika Varthini" class="profile-img">
-
-        <h1>Heshika Varthini S</h1>
-        <h2>Data Science • AI • Machine Learning</h2>
-
-        <p>
-            Building intelligent systems that turn data into insight,
-            automation, and real-world impact.
-        </p>
-
-        <div class="links">
-            <a href="https://github.com/HeshikaVarthini" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/heshika-varthini" target="_blank">LinkedIn</a>
-            <a href="mailto:Heshika1744@gmail.com">Email</a>
-        </div>
-    </div>
+<!-- NAVBAR -->
+<header>
+    <div class="logo">HV</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Hello, I'm <span>Heshika Varthini</span>.</h1>
+        <h2>Data Scientist | AI & ML Engineer</h2>
+
+        <p>
+            Enthusiastic MSc Data Science student with hands-on experience in
+            Machine Learning, Deep Learning, Reinforcement Learning, and
+            AI-powered applications. Passionate about building intelligent
+            systems that solve real-world problems.
+        </p>
+
+        <div class="buttons">
+            <a href="#contact" class="btn primary">Let's Talk</a>
+            <a href="https://github.com/HeshikaVarthini" target="_blank" class="btn secondary">
+                View GitHub →
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="profile.jpg" alt="Heshika Varthini">
+    </div>
+</section>
+
 <!-- ABOUT -->
-<section data-aos="fade-up">
-    <h2>About Me</h2>
+<section id="about" class="section">
+    <h3>About Me</h3>
     <p>
-        Enthusiastic Data Science student with strong interests in Artificial Intelligence,
-        Machine Learning, Reinforcement Learning, and intelligent systems.
-        I enjoy solving complex problems using data-driven approaches.
+        I am currently pursuing an Integrated MSc in Data Science at
+        Amrita Vishwa Vidyapeetham, Coimbatore (CGPA 8.11).
+        My interests include Machine Learning, Deep Learning, Financial AI,
+        Reinforcement Learning, and AI research.
     </p>
 </section>
 
 <!-- PROJECTS -->
-<section>
-    <h2 data-aos="fade-right">Projects</h2>
+<section id="projects" class="section">
+    <h3>Featured Projects</h3>
 
-    <div class="project-grid">
-        <div class="card" data-aos="zoom-in">
-            <h3>💬 Financial Conversational AI</h3>
-            <p>AI chatbot for real-time stock insights using NLP and LSTM forecasting.</p>
-            <span>Python • PyTorch • Transformers</span>
-        </div>
+    <div class="project-card">
+        <h4>Financial Conversational AI Dashboard</h4>
+        <p>
+            AI-powered dashboard for real-time stock analysis using
+            technical indicators, sentiment analysis, and LSTM/TCN forecasting.
+        </p>
+        <span>Python | Streamlit | PyTorch | Transformers</span>
+    </div>
 
-        <div class="card" data-aos="zoom-in">
-            <h3>🤖 Quadruped RL Locomotion</h3>
-            <p>PPO-based reinforcement learning for stable walking and obstacle avoidance.</p>
-            <span>RL • PyBullet • Stable-Baselines3</span>
-        </div>
+    <div class="project-card">
+        <h4>Reinforcement Learning for Quadruped Locomotion</h4>
+        <p>
+            PPO-based RL system enabling stable walking and obstacle avoidance
+            in a PyBullet simulated quadruped robot.
+        </p>
+        <span>PyBullet | PPO | Stable-Baselines3</span>
+    </div>
 
-        <div class="card" data-aos="zoom-in">
-            <h3>🚗 Number Plate Detection</h3>
-            <p>Automated number plate recognition using OpenCV and OCR.</p>
-            <span>OpenCV • OCR • Python</span>
-        </div>
+    <div class="project-card">
+        <h4>Number Plate Detection System</h4>
+        <p>
+            Automated number plate recognition using OpenCV and OCR with
+            database storage.
+        </p>
+        <span>Python | OpenCV | Tesseract</span>
     </div>
 </section>
 
-<!-- SKILLS -->
-<section data-aos="fade-left">
-    <h2>Skills</h2>
-    <div class="skills">
-        <span>Python</span>
-        <span>Machine Learning</span>
-        <span>Deep Learning</span>
-        <span>PyTorch</span>
-        <span>Reinforcement Learning</span>
-        <span>SQL</span>
-        <span>OpenCV</span>
-    </div>
+<!-- RESEARCH -->
+<section id="research" class="section">
+    <h3>Research Experience</h3>
+    <p>
+        Research on Machine Learning for Bidirectional Communication in
+        MQTT-based IoT datasets, focusing on optimized data transmission
+        and predictive analytics.
+    </p>
 </section>
 
-<!-- EDUCATION -->
-<section data-aos="fade-up">
-    <h2>Education</h2>
-    <div class="edu-card">
-        <h3>Integrated MSc Data Science</h3>
-        <p>Amrita Vishwa Vidyapeetham, Coimbatore</p>
-        <p><b>CGPA:</b> 8.11</p>
-    </div>
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:Heshika1744@gmail.com">Heshika1744@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/heshika-varthini" target="_blank">linkedin.com/in/heshika-varthini</a></p>
+    <p>GitHub: <a href="https://github.com/HeshikaVarthini" target="_blank">github.com/HeshikaVarthini</a></p>
 </section>
-
-<footer>
-    <p>© 2026 Heshika Varthini S</p>
-</footer>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({ duration: 1200, once: true });
-</script>
 
 </body>
 </html>
