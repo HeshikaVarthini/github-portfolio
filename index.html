@@ -3,85 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <title>Heshika Varthini | Portfolio</title>
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Heshika Varthini S</h1>
-    <p>Data Science Student | AI & ML Enthusiast</p>
-    <div class="links">
+<!-- HERO -->
+<header class="hero">
+    <h1 data-aos="fade-down">Hi, I'm <span>Heshika Varthini</span> 👋</h1>
+    <h2 data-aos="fade-up">Data Science • AI • Machine Learning</h2>
+    <p data-aos="fade-up" data-aos-delay="200">
+        I build intelligent systems that transform data into insights.
+    </p>
+
+    <div class="links" data-aos="zoom-in">
         <a href="https://github.com/HeshikaVarthini" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/heshika-varthini" target="_blank">LinkedIn</a>
         <a href="mailto:Heshika1744@gmail.com">Email</a>
     </div>
 </header>
 
-<section>
+<!-- ABOUT -->
+<section data-aos="fade-up">
     <h2>About Me</h2>
     <p>
-        Enthusiastic Data Science student passionate about AI, Machine Learning,
-        and solving real-world problems using data-driven approaches.
+        Enthusiastic Data Science student with strong interests in Artificial Intelligence,
+        Machine Learning, Reinforcement Learning, and real-world problem solving.
     </p>
 </section>
 
+<!-- PROJECTS -->
 <section>
-    <h2>Projects</h2>
+    <h2 data-aos="fade-right">Projects</h2>
 
-    <div class="card">
-        <h3>Financial Conversational AI Dashboard</h3>
-        <p>
-            AI-powered dashboard for real-time stock analysis using NLP,
-            LSTM, TCN, and technical indicators.
-        </p>
-        <p><b>Tech:</b> Python, Streamlit, PyTorch, Transformers</p>
+    <div class="project-grid">
+        <div class="card" data-aos="zoom-in">
+            <h3>💬 Financial Conversational AI</h3>
+            <p><b>Problem:</b> Complex stock data is hard to analyze.</p>
+            <p><b>Solution:</b> NLP-powered chatbot with forecasting.</p>
+            <p><b>Tech:</b> Python, Streamlit, PyTorch, Transformers</p>
+        </div>
+
+        <div class="card" data-aos="zoom-in">
+            <h3>🤖 Quadruped RL Locomotion</h3>
+            <p><b>Goal:</b> Stable walking & obstacle avoidance.</p>
+            <p><b>Approach:</b> PPO with custom PyBullet environment.</p>
+            <p><b>Tech:</b> Python, PyBullet, Stable-Baselines3</p>
+        </div>
+
+        <div class="card" data-aos="zoom-in">
+            <h3>🚗 Number Plate Detection</h3>
+            <p><b>Task:</b> Detect & recognize vehicle numbers.</p>
+            <p><b>Method:</b> OpenCV + OCR pipeline.</p>
+            <p><b>Tech:</b> Python, OpenCV, Pytesseract</p>
+        </div>
     </div>
-
-    <div class="card">
-        <h3>Quadruped RL Locomotion & Obstacle Avoidance</h3>
-        <p>
-            PPO-based reinforcement learning system for quadruped robots
-            using PyBullet simulation.
-        </p>
-        <p><b>Tech:</b> Python, PyBullet, Stable-Baselines3</p>
-    </div>
-
-    <div class="card">
-        <h3>Number Plate Detection System</h3>
-        <p>
-            Automatic number plate recognition using OpenCV and OCR,
-            storing results in a database.
-        </p>
-        <p><b>Tech:</b> Python, OpenCV, Pytesseract</p>
-    </div>
-
 </section>
 
+<!-- SKILLS -->
 <section>
-    <h2>Skills</h2>
-    <ul class="skills">
-        <li>Python</li>
-        <li>Machine Learning</li>
-        <li>Deep Learning</li>
-        <li>PyTorch</li>
-        <li>SQL (MySQL, PostgreSQL)</li>
-        <li>OpenCV</li>
-        <li>Reinforcement Learning</li>
-    </ul>
+    <h2 data-aos="fade-left">Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>Machine Learning</span>
+        <span>Deep Learning</span>
+        <span>PyTorch</span>
+        <span>SQL</span>
+        <span>OpenCV</span>
+        <span>Reinforcement Learning</span>
+    </div>
 </section>
 
-<section>
+<!-- EDUCATION -->
+<section data-aos="fade-up">
     <h2>Education</h2>
-    <p>
-        <b>Integrated MSc Data Science</b><br>
-        Amrita Vishwa Vidyapeetham, Coimbatore<br>
-        CGPA: 8.11
-    </p>
+    <div class="edu-card">
+        <h3>Integrated MSc Data Science</h3>
+        <p>Amrita Vishwa Vidyapeetham, Coimbatore</p>
+        <p><b>CGPA:</b> 8.11</p>
+    </div>
 </section>
 
 <footer>
     <p>© 2026 Heshika Varthini S</p>
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
 
 </body>
 </html>
